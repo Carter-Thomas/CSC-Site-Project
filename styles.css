@@ -1,7 +1,19 @@
-h1.header {
-    text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
 body {
     font-family: PT Sans;
+    background-color: rgba(38, 80, 144, 0.6);
+}
+h1.header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 340%;
+}
+hr {
+    border: none;
+    height: 7px;
+    background: black;
+}
+.header-section {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: rgba(0, 28, 69, 0.5);
 }
