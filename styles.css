@@ -1,15 +1,19 @@
 *, *:before, *:after {
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 	}
+
+	.entry {
+		color: #9ED3F7;
+	}
 	
 	body {
 	 /* overflow: hidden; */
 	 font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	 font-weight: 100;
-	 color: rgba(255, 255, 255, 1);
-	 margin: 0;
+	 margin: auto;
 	 padding: 0;
-	 background: #4A4A4A;
+	 color: #001F3F;
+	 background: #001F3F;
 	 -webkit-touch-callout: none;
 	 -webkit-user-select: none;
 	 -khtml-user-select: none;
@@ -19,46 +23,84 @@
 	}
 	
 	.main {
-		padding: 50px;
 		text-align: center;
-
+		color: #9ED3F7;
 	}
 
-	.header {
-		font-size: large;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		
-	}
 	#calendar {
 	  -webkit-transform: translate3d(0, 0, 0);
 	  -moz-transform: translate3d(0, 0, 0);
 	  transform: translate3d(0, 0, 0);
 	  width: 420px;
 	  margin: 0 auto;
-	  height: 570px;
+	  height: 700px;
 	  overflow: hidden;
+	  border-radius: 25px;
+	  /* border: solid black 1px; */
 	}
 	
 	.header {
 	  height: 50px;
 	  width: 420px;
-	  background: rgba(66, 66, 66, 1);
+	  background: #9ED3F7;
 	  text-align: center;
 	  position:relative;
 	  z-index: 100;
+	  margin: auto;
+	  padding: 0px 0px 0px 0px;
+	}
+
+	.header1 {
+		margin: auto;
+		text-align: center;
+		background: #9ED3F7;
+	}
+
+	.calendar-header {
+		text-align: center;
+		color: #9ED3F7;
 	}
 	
-	.header h1 {
-	  margin: 0;
-	  padding: 0;
-	  font-size: 20px;
+	.header1 h1 {
+	  margin-top: 15px;
+	  /* margin: 0; */
+	  text-align: center;
+	  /* padding: 0; */
+	  font-size: 50px;
 	  line-height: 50px;
-	  font-weight: 100;
-	  letter-spacing: 1px;
+	  /* font-weight: 500;
+	  letter-spacing: 1px; */
+	  background: #9ED3F7;
 	}
 	
+/* Default Button Style */
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #9ED3F7; /* Columbia Blue */
+	color: #9ED3F7; /* Columbia Blue */
+	background-color: #001F3F; /* Navy Blue */
+	border-radius: 5px;
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover State */
+  .button:hover {
+	background-color: #9ED3F7; /* Columbia Blue */
+	color: #001F3F; /* Navy Blue */
+  }
+  
+  /* Active State */
+  .button:active {
+	background-color: #BFE1FF; /* Lighter Columbia Blue */
+	border-color: #BFE1FF; /* Lighter Columbia Blue */
+	color: #001F3F; /* Navy Blue */
+  }
+  
+
 	.left, .right {
 	  position: absolute;
 	  width: 0px;
@@ -84,6 +126,7 @@
 	.month {
 	  /*overflow: hidden;*/
 	  opacity: 0;
+	  color: #9ED3F7;
 	}
 	
 	.month.new {

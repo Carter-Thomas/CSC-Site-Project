@@ -1,3 +1,15 @@
+function newsRedirect() {
+  window.location.href = 'news.html'
+}
+
+function pastMeetingsRedirect() {
+  window.location.href = 'past-meetings.html'
+}
+
+function homeRedirect() {
+  window.location.href = 'index.html'
+}
+
 !function() {
 
   var today = moment();

@@ -13,21 +13,23 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header1">
         <header>
 			<h1>Welcome to the PHS CSC Website!</h1>
-            <button>Past Meetings</button>
-            <button>News</button>
+			<h2>Join our Schoology Group Here! 7Q36-F6R4-Z4FK6</h2>
+            <button onclick="pastMeetingsRedirect()" class="button">Past Meetings</button>
+            <button onclick="newsRedirect()" class="button">News</button>
         </header>
     </div>
 
-    <div class="main">
-        <h2>Join our Schoology Group Here: 7Q36-F6R4-Z4FK6 </h2>
-		<h1>Computer Science Club Calendar</h1>
-    </div>  
+    <!-- <div class="main">
+        <h1>Join our Schoology Group Here! 7Q36-F6R4-Z4FK6 </h1>
+    </div>   -->
 	<!-- Main wrapper for the calendar application -->
 	
-	<div id="calendar"></div>
+	<div id="calendar">
+		<h1 class="calendar-header">Computer Science Club Calendar</h1>
+	</div>
 	<h1>Placeholder</h1>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
 	<script src="index.js"></script>
