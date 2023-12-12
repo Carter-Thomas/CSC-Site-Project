@@ -51,9 +51,11 @@
 	}
 
 	.header1 {
+		font-family: 'Nanum Gothic Coding', monospace;
 		margin: auto;
-		text-align: center;
+		text-align: left;
 		background: #9ED3F7;
+		padding: 8%;
 	}
 
 	.calendar-header {
