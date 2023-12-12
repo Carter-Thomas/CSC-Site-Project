@@ -348,3 +348,20 @@ function homeRedirect() {
   var calendar = new Calendar('#calendar', data);
 
 }();
+
+
+var i = 0;
+var txt = 'Welcome to the PHS CSC Website!'; 
+var speed = 100; 
+
+(function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("titleMain").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  } else {
+    setTimeout(typeWriter, speed*10)
+    document.getElementById("titleMain").innerHTML = ""
+    i = 0
+  }
+})();
